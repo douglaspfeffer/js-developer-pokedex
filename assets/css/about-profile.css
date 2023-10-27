@@ -1,0 +1,151 @@
+body {
+    background: none;
+    background-size: cover;
+    background-position: center;
+}
+
+.arrow-back{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.back button img {
+    height: 3rem;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    max-width: 1440px;
+    padding: 0;
+    gap: 50px;
+    align-self: center;
+}
+
+.content .details{
+    max-height: 15rem;
+}
+
+.content .details .basic{
+    height: 20rem;
+    width: 20rem;
+    border-radius: 25px;
+    position: relative;
+}
+
+.content .details .basic .name{
+    padding: .625rem;
+    margin: .625rem;
+    color: #fff;
+    text-transform: capitalize;
+    text-align: left;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.content .details .basic .number {
+    color: #fff;
+    text-align: right;
+    font-size: 1.2rem;
+    margin: .625rem;
+}
+
+.content .details .basic .types{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: .625rem;
+    gap: 5px;
+    list-style: none;
+    font-size: 0.8rem;
+    color: #fff;
+    justify-content: left;
+    text-transform: capitalize;
+
+}
+.content .details .basic .types .type {
+    color: #fff;
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    border-radius: 1rem;
+    filter: brightness(1.1);
+    text-align: center;
+}
+
+.content .details .basic .img{
+    width: clamp(40%, 5vw, 50%);
+    position: absolute;
+    top: 55%;
+    left: 30%;
+    z-index: 2;
+}
+
+.content .details .menu_items{
+    background-color: #f6f8fc;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    border-radius: 30px;
+    bottom: 18%;
+}
+
+.content .details .menu_items .skills{
+    position: absolute;
+    color: rgb(68, 68, 68);
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 5px;
+    left: 20px;
+    width: 80%;
+    text-align: center;
+}
+
+.content .details .menu_items .atributes{
+    padding: 50px 20px 40px;
+    margin: 0;
+}
+
+/* Format HP, Attack, Defense, Height and Weight */
+.content .details .menu_items .span-details{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(170, 170, 170);
+    font-size: 15px;
+}
+
+#species{
+    text-transform: capitalize;
+}
+
+#abilities{
+    text-transform: capitalize;
+}
+
+@media screen and (max-width: 375px) {
+
+    .content{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .details{
+        height: 500px;
+    }
+
+}
+
+@media screen and (min-width: 2000px) {
+
+    .content{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .details{
+        height: 500px;
+    }
+
+}
